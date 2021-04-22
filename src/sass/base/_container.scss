@@ -1,17 +1,10 @@
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-
-  .page-header & {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 320px;
     margin: 0 auto;
   }
 }
@@ -19,11 +12,13 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding: 0 34px;
   }
 }
 
 @media screen and (min-width: 1080px) {
   .container {
     width: 1080px;
+    padding: 0 15px;
   }
 }
