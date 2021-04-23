@@ -1,35 +1,25 @@
-@media screen and(min-width: 320px) {
+section {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 245, 246, 1) 26%);
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 245, 246, 1) 26%
+  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 245, 246, 1) 26%);
+}
+@media screen and(min-width: 320px) and (max-width: 767px) {
   .container {
     width: 320px;
     margin: 0 auto;
   }
   .contacts-list {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    margin-bottom: 54px;
     &__item:not(:last-child) {
       margin-bottom: 20px;
-    }
-    &__item {
-      width: 220px;
-      height: 427px;
-      background: #ffffff;
-      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-      border-radius: 24px;
-      &__title {
-        font-family: var(--secondary-font);
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
-        color: var(--secondary-text-color);
-      }
-      &__text {
-        font-family: var(--secondary-font);
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.5;
-        color: var(--section-text-color);
-      }
     }
     &__link {
       font-family: var(--secondary-font);
@@ -39,19 +29,139 @@
       color: var(--section-text-color);
     }
   }
+  .contacts-list__item {
+    padding-left: 20px;
+    padding-top: 43px;
+    width: 220px;
+    height: 427px;
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  .contacts-item__title {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+  }
+  .contacts-item__text {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--section-text-color);
+    &::after {
+      display: block;
+      margin: 25px 0px;
+      content: '';
+      width: 179px;
+      height: 0px;
+      border: 1px solid var(--customer-reviews);
+    }
+  }
+  .contacts-item__time:not(last-child) {
+    margin-bottom: 10px;
+  }
+  .contacts-list__wrapper {
+    &::after {
+      display: block;
+      margin: 25px 0px;
+      content: '';
+      width: 179px;
+      height: 0px;
+      border: 1px solid var(--customer-reviews);
+    }
+  }
+  .contacts-item__time {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    color: hsl(346, 100%, 82%);
+  }
+  .contacts-list__item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    width: 80px;
+    height: 16px;
+    background: var(--icecoffe-bg-color);
+    border-radius: 4px;
+  }
+  .contacts-list__item-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    width: 130px;
+    height: 16px;
+    background: var(--milkshake-bg-color);
+    border-radius: 4px;
+  }
   .contacts-wrapper {
     display: flex;
     flex-direction: column;
-    width: 161px;
-    height: 98px;
+    align-items: center;
+  }
+  .location-form__btn {
+    align-items: center;
+    width: 161.45px;
+    height: 44px;
+    background: var(--burger-icon-color);
+    border-radius: 22px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
+    color: var(--primary-text-color);
+    border-style: none;
+  }
+  .location-form__btn:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .light-teme {
+    color: var(--accent-color);
+    background: var(--primary-background-color);
+  }
+  .location-form__icon {
+    fill: var(--primary-background-color);
+  }
+  .franchise-form__icon {
+    fill: var(--accent-color);
   }
 }
-@media screen and(min-width: 768px) {
+@media screen and(min-width: 768px) and (max-width: 1079px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
   .contacts-list {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    &__item:not(:last-child) {
-      margin-right: 20px;
+    margin-bottom: 80px;
+    &__item:not(:first-child) {
+      margin-left: 20px;
     }
     &__link {
       font-family: var(--secondary-font);
@@ -62,18 +172,54 @@
     }
   }
   .contacts-list__item {
+    padding: 50px 32px;
     width: 220px;
     height: 544px;
     background: var(--primary-background-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
   }
+  .contacts-list__item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    width: 73px;
+    height: 28px;
+    background: var(--icecoffe-bg-color);
+    border-radius: 6px;
+  }
+  .contacts-list__item-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    width: 138px;
+    height: 28px;
+    background: var(--milkshake-bg-color);
+    border-radius: 6px;
+  }
   .contacts-item__time {
     font-family: var(--secondary-font);
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    color: #ffa5ba;
+    font-size: 14px;
+    line-height: 1.85;
+    color: var(--secondary-accent-color);
   }
   .contacts-item__title {
     font-family: var(--secondary-font);
@@ -89,5 +235,188 @@
     font-size: 14px;
     line-height: 1.64;
     color: var(--section-text-color);
+    &::after {
+      display: block;
+      margin: 30px 0px;
+      content: '';
+      width: 157px;
+      height: 0px;
+      border: 1px solid var(--customer-reviews);
+    }
+  }
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .location-form__btn {
+    width: 174.05px;
+    height: 44px;
+    background: var(--burger-icon-color);
+    border-radius: 22px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: var(--primary-text-color);
+    border-style: none;
+  }
+  .location-form__btn:not(:last-child) {
+    margin-right: 15px;
+  }
+  .light-teme {
+    color: var(--accent-color);
+    background: var(--primary-background-color);
+  }
+  .location-form__icon {
+    fill: var(--primary-background-color);
+  }
+  .franchise-form__icon {
+    fill: var(--accent-color);
+  }
+  .contacts-list__wrapper {
+    &::after {
+      display: block;
+      margin: 30px 0px;
+      content: '';
+      width: 157px;
+      height: 0px;
+      border: 1px solid var(--customer-reviews);
+    }
+  }
+}
+@media screen and(min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .contacts-list {
+    margin-top: 127px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 86px;
+    &__item:not(:first-child) {
+      margin-left: 30px;
+    }
+    &__link {
+      font-family: var(--secondary-font);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.81;
+      color: var(--section-text-color);
+    }
+  }
+  .contacts-list__item {
+    padding: 56px 43px;
+    width: 330px;
+    height: 572px;
+    background: var(--primary-background-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  .contacts-list__item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    width: 73px;
+    height: 28px;
+    background: var(--icecoffe-bg-color);
+    border-radius: 6px;
+  }
+  .contacts-list__item-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    width: 138px;
+    height: 28px;
+    background: var(--milkshake-bg-color);
+    border-radius: 6px;
+  }
+  .contacts-item__time {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--secondary-accent-color);
+  }
+  .contacts-item__title {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+  }
+  .contacts-item__text {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.64;
+    color: var(--section-text-color);
+    &::after {
+      display: block;
+      margin: 30px 0px;
+      content: '';
+      width: 234px;
+      height: 0px;
+      border: 1px solid var(--customer-reviews);
+    }
+  }
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .location-form__btn {
+    width: 198px;
+    height: 44px;
+    background-color: var(--burger-icon-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: var(--primary-text-color);
+    border-radius: 22px;
+    border-style: none;
+  }
+  .location-form__btn:not(:last-child) {
+    margin-right: 15px;
+  }
+  .light-teme {
+    color: var(--accent-color);
+    background: var(--primary-background-color);
+  }
+  .location-form__icon {
+    fill: var(--primary-background-color);
+  }
+  .franchise-form__icon {
+    fill: var(--accent-color);
+  }
+  .contacts-list__wrapper {
+    &::after {
+      display: block;
+      margin: 30px 0px;
+      content: '';
+      width: 234px;
+      height: 0px;
+      border: 1px solid var(--customer-reviews);
+    }
   }
 }
