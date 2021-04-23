@@ -10,7 +10,6 @@
       margin-bottom: 20px;
     }
     &__item {
-      position: absolute;
       width: 220px;
       height: 427px;
       background: #ffffff;
@@ -40,10 +39,9 @@
       color: var(--section-text-color);
     }
   }
-  .contactts-wrapper {
+  .contacts-wrapper {
     display: flex;
     flex-direction: column;
-    position: absolute;
     width: 161px;
     height: 98px;
   }
@@ -51,31 +49,9 @@
 @media screen and(min-width: 768px) {
   .contacts-list {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     &__item:not(:last-child) {
       margin-right: 20px;
-    }
-    &__item {
-      width: 220px;
-      height: 544px;
-      background: var(--primary-background-color);
-      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-      border-radius: 24px;
-      &__title {
-        font-family: var(--secondary-font);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.85;
-        letter-spacing: 0.04em;
-        color: var(--secondary-text-color);
-      }
-      &__text {
-        font-family: var(--secondary-font);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.64;
-        color: var(--section-text-color);
-      }
     }
     &__link {
       font-family: var(--secondary-font);
@@ -84,5 +60,34 @@
       line-height: 1.85;
       color: var(--section-text-color);
     }
+  }
+  .contacts-list__item {
+    width: 220px;
+    height: 544px;
+    background: var(--primary-background-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  .contacts-item__time {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    color: #ffa5ba;
+  }
+  .contacts-item__title {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+  }
+  .contacts-item__text {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.64;
+    color: var(--section-text-color);
   }
 }
