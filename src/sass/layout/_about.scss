@@ -4,7 +4,7 @@
   background-color: var(--background-color);
 }
 
-.about_label {
+.about__label {
   display: block;
 
   margin-bottom: 15px;
@@ -17,7 +17,7 @@
   color: var(--background-color-hero);
 }
 
-.about_title {
+.about__title {
   margin-bottom: 26px;
   font-weight: 400;
   font-size: 34px;
@@ -29,7 +29,10 @@
   color: var(--burger-icon-color);
 }
 
-.about_list {
+.about_wraper {
+}
+
+.about__list {
   margin-left: 50px;
   margin-right: 50px;
 
@@ -38,7 +41,7 @@
   // }
 }
 
-.about_item {
+.about__item {
   margin-top: 45px;
   font-weight: 500;
   font-size: 12px;
@@ -51,11 +54,11 @@
   }
 }
 
-.about_button {
+.about__button {
   display: inline-block;
   text-align: center;
   margin-top: 15px;
-
+  width: 176px;
   padding: 10px 35px;
   font-weight: 700;
   font-size: 14px;
@@ -65,4 +68,37 @@
   background: #ffffff;
   border-radius: 22px;
   border: none;
+}
+
+.about-list__wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .about__label {
+    font-size: 26px;
+  }
+
+  .about__title {
+    font-size: 48px;
+  }
+
+  .about__wraper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__label {
+    font-size: 30px;
+  }
+
+  .about__title {
+    font-size: 58px;
+  }
+
+  .about__wraper {
+    display: flex;
+  }
 }
