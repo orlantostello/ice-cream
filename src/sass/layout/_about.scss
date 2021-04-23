@@ -29,6 +29,9 @@
   color: var(--burger-icon-color);
 }
 
+.about_wraper {
+}
+
 .about_list {
   margin-left: 50px;
   margin-right: 50px;
@@ -55,7 +58,7 @@
   display: inline-block;
   text-align: center;
   margin-top: 15px;
-
+  width: 176px;
   padding: 10px 35px;
   font-weight: 700;
   font-size: 14px;
@@ -65,4 +68,37 @@
   background: #ffffff;
   border-radius: 22px;
   border: none;
+}
+
+.about-list_wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .about_label {
+    font-size: 26px;
+  }
+
+  .about_title {
+    font-size: 48px;
+  }
+
+  .about_wraper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about_label {
+    font-size: 30px;
+  }
+
+  .about_title {
+    font-size: 58px;
+  }
+
+  .about_wraper {
+    display: flex;
+  }
 }
