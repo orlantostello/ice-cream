@@ -34,11 +34,21 @@
     letter-spacing: 0.03em;
     width: 200px;
   }
+}
 
-  &__logo {
-    display: flex;
-    margin-bottom: 16px;
-  }
+.advantages__item:before {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.icon-milk:before {
+  background-image: url('../images/icon1about.png');
+}
+.icon-apple:before {
+  background-image: url('../images/icon2about.png');
+}
+.icon-candy:before {
+  background-image: url('../images/icon3about.png');
 }
 
 @media screen and (min-width: 768px) and (max-width: 1079px) {
@@ -48,7 +58,7 @@
     justify-content: space-between;
   }
 
-  .advantages__logo {
+  .advantages__item:before {
     margin-bottom: 36px;
   }
 
@@ -76,7 +86,7 @@
     width: 100%;
   }
 
-  .advantages__logo {
+  .advantages__item:before {
     margin-bottom: 40px;
   }
 
