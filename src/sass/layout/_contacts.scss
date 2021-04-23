@@ -1,0 +1,88 @@
+@media screen and(min-width: 320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    &__item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &__item {
+      position: absolute;
+      width: 220px;
+      height: 427px;
+      background: #ffffff;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+      border-radius: 24px;
+      &__title {
+        font-family: var(--secondary-font);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        letter-spacing: 0.04em;
+        color: var(--secondary-text-color);
+      }
+      &__text {
+        font-family: var(--secondary-font);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: var(--section-text-color);
+      }
+    }
+    &__link {
+      font-family: var(--secondary-font);
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--section-text-color);
+    }
+  }
+  .contactts-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 161px;
+    height: 98px;
+  }
+}
+@media screen and(min-width: 768px) {
+  .contacts-list {
+    display: flex;
+    align-items: center;
+    &__item:not(:last-child) {
+      margin-right: 20px;
+    }
+    &__item {
+      width: 220px;
+      height: 544px;
+      background: var(--primary-background-color);
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+      border-radius: 24px;
+      &__title {
+        font-family: var(--secondary-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.85;
+        letter-spacing: 0.04em;
+        color: var(--secondary-text-color);
+      }
+      &__text {
+        font-family: var(--secondary-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.64;
+        color: var(--section-text-color);
+      }
+    }
+    &__link {
+      font-family: var(--secondary-font);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.85;
+      color: var(--section-text-color);
+    }
+  }
+}
