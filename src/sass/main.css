@@ -50,18 +50,15 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
   display: block;
 }
 
-.link {
+a {
   text-decoration: none;
-}
-
-.list {
-  list-style: none;
 }
 
 .address {
@@ -1502,6 +1499,43 @@ img {
   }
   .advantages .advantages__item:last-child {
     margin-right: 0px;
+  }
+}
+
+.gallery {
+  position: relative;
+  height: 122px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39.4%, var(--background-color)), color-stop(39.4%, var(--primary-background-color)), color-stop(60.6%, var(--primary-background-color)));
+  background-image: linear-gradient(to bottom, var(--background-color) 39.4%, var(--primary-background-color) 39.4%, var(--primary-background-color) 60.6%);
+}
+
+.gallery-image {
+  display: block;
+  position: absolute;
+  top: 0px;
+  margin: 0 auto 0 -23px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    height: 264px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39.6%, var(--background-color)), color-stop(39.6%, var(--primary-background-color)), color-stop(60.4%, var(--primary-background-color)));
+    background-image: linear-gradient(to bottom, var(--background-color) 39.6%, var(--primary-background-color) 39.6%, var(--primary-background-color) 60.4%);
+  }
+  .gallery-image {
+    left: -34px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .gallery {
+    height: 430px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(39.6%, var(--background-color)), color-stop(39.6%, var(--primary-background-color)), color-stop(60.4%, var(--primary-background-color)));
+    background-image: linear-gradient(to bottom, var(--background-color) 39.6%, var(--primary-background-color) 39.6%, var(--primary-background-color) 60.4%);
+  }
+  .gallery-image {
+    left: -115px;
   }
 }
 
