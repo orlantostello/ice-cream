@@ -72,9 +72,15 @@
   line-height: 1.31;
 
   color: var(--burger-icon-color);
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 22px;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    cursor: pointer;
+  }
 }
 
 .about__button-icon {
