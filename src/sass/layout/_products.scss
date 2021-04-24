@@ -9,8 +9,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .container {
+  .products__container {
     position: relative;
+    width: 320px;
+    margin: 0 auto;
   }
   .products {
     text-align: center;
@@ -184,7 +186,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1079px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
     position: relative;
   }
@@ -360,8 +362,8 @@
   // }
 }
 
-@media screen and (min-width: 1080px) {
-  .container {
+@media screen and (min-width: 1280px) {
+  .products__container {
     position: relative;
   }
   .products {
