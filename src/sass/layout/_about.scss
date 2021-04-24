@@ -2,6 +2,20 @@
   padding-top: 125px;
   padding-bottom: 40px;
   background-color: var(--background-color);
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    background-position-y: 88%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/mobile/aboutmilk_mob-min.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-position-y: 130%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/desktop/aboutmilk_desktop-min.png);
+  }
 }
 
 .about__label {
@@ -30,9 +44,6 @@
 }
 
 .about__list {
-  // @media screen and (min-width: 320px) and (max-width: 480px) {
-  //   background-image: url(./images/mobile/aboutmilk_mob-min.png);
-  // }
 }
 
 .about__item {
