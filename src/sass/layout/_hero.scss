@@ -250,8 +250,11 @@
 }
 
 .hero__info-block {
-  display: flex;
-  flex-direction: column;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero__info-title {
