@@ -58,6 +58,36 @@
   }
 }
 
+// Logo
+.logo {
+  transition-duration: 500ms;
+
+  &--header {
+    display: flex;
+    align-items: center;
+    color: #d41443;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  &__title {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
 // Nav menu
 .nav-menu__list {
   display: none;
