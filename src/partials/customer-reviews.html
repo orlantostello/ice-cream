@@ -1,8 +1,10 @@
 <section class="customer-reviews"> 
     <div class="container">
-        
-        <img class="customer-reviews__img" src="./images/contacsimg1-min.jpg"
-            alt="девушка с тёмными кучерявыми волосами">   
+        <picture class="picture">
+            <source srcset="./images/contacsimg1-min.jpg 1x, ./images/contacsimg1@2x-min.jpg 2x" media="(min-width: 320px)">
+            <img class="customer-reviews__img" src="./images/contacsimg1-min.jpg" 
+                alt="девушка с тёмными кучерявыми волосами">
+        </picture>
 
         <div class="customer-reviews__position">
             <p class="customer-reviews__position-text">
@@ -11,6 +13,7 @@
                 congue. Lorem ipsum primis in nibh vel risus.
             </p>
         </div>
+        
         
         <ul class="customer-reviews__list list">
             <li class="customer-reviews__item">
