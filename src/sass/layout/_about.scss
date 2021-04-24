@@ -29,19 +29,14 @@
   color: var(--burger-icon-color);
 }
 
-.about_wraper {
-}
-
 .about__list {
-  margin-left: 50px;
-  margin-right: 50px;
-
   // @media screen and (min-width: 320px) and (max-width: 480px) {
   //   background-image: url(./images/mobile/aboutmilk_mob-min.png);
   // }
 }
 
 .about__item {
+  font-family: DM Sans;
   margin-top: 45px;
   font-weight: 500;
   font-size: 12px;
@@ -71,8 +66,8 @@
 }
 
 .about-list__wraper {
-  display: flex;
-  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1079px) {
@@ -89,7 +84,25 @@
     display: flex;
   }
 
+  .about-list__wraper {
+    margin-left: 17px;
+    margin-right: 0;
+  }
+
   .about__list {
+  }
+
+  .about__item {
+    font-size: 14px;
+    line-height: 1.76;
+
+    &:last-child {
+      letter-spacing: 0.04em;
+    }
+  }
+
+  .about__button {
+    margin-top: 62px;
   }
 }
 
@@ -105,5 +118,24 @@
 
   .about__wraper {
     display: flex;
+  }
+
+  .about-list__wraper {
+    margin-left: 74px;
+    margin-right: 0;
+  }
+
+  .about__item {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+
+    &:last-child {
+      margin-top: 35px;
+    }
+  }
+
+  .about__button {
+    margin-top: 45px;
   }
 }
