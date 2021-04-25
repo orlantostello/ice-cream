@@ -149,6 +149,7 @@
   .location-form__btn_dark-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--burger-icon-color);
+    cursor: pointer;
   }
   .location-form__btn_light-theme {
     align-items: center;
@@ -168,6 +169,7 @@
   .location-form__btn_light-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
+    cursor: pointer;
   }
 }
 @media screen and(min-width: 768px) and (max-width: 1279px) {
@@ -289,6 +291,7 @@
   .location-form__btn_dark-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--burger-icon-color);
+    cursor: pointer;
   }
   .location-form__btn_light-theme {
     width: 174px;
@@ -306,6 +309,7 @@
   .location-form__btn_light-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
+    cursor: pointer;
   }
   .contacts-list__wrapper {
     &::after {
@@ -437,6 +441,7 @@
   .location-form__btn_dark-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--burger-icon-color);
+    cursor: pointer;
   }
   .location-form__btn_light-theme {
     width: 198px;
@@ -454,6 +459,7 @@
   .location-form__btn_light-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
+    cursor: pointer;
   }
   .contacts-list__wrapper {
     &::after {
