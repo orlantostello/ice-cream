@@ -307,12 +307,12 @@
     height: 226px;
     background-image: url('../images/tablet/product-ice-cream_tablet-min.png');
   }
-  // ЧТО-ТО НЕ ТАК С КАРТИНКАМИ 2X, БОЛЬШЕ ПО РАЗМЕРУ, ЧЕМ ДОЛЖНЫ БЫТЬ
+  // // ЧТО-ТО НЕ ТАК С КАРТИНКАМИ 2X, БОЛЬШЕ ПО РАЗМЕРУ, ЧЕМ ДОЛЖНЫ БЫТЬ
   // @media (min-device-pixel-ratio: 2),
   //   (-webkit-min-device-pixel-ratio: 2),
   //   (min-resolution: 192dpi),
   //   (min-resolution: 2dppx) {
-  //   .products-list__item-ice-cream::before {
+  //   .products-list__item_ice-cream::before {
   //     background-image: url('../images/tablet/product-ice-cream_tablet@2x-min.png');
   //     width: 220px;
   //     height: 226px;
@@ -335,8 +335,7 @@
   //   (min-resolution: 2dppx) {
   //   .products-list__item_ice-coffee::before {
   //     background-image: url('../images/tablet/product-icecoffee_tablet@2x-min.png');
-  //     width: 220px;
-  //     height: 233px;
+  //     background-size: 220px 233px;
   //   }
   // }
 
