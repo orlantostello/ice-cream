@@ -1,6 +1,4 @@
 .contacts {
-  position: relative;
-  height: 122px;
   background-image: linear-gradient(
     to bottom,
     var(--primary-background-color) 15.4%,
@@ -10,7 +8,7 @@
 }
 .location-form__btn:hover,
 .location-form__btn:focus {
-  color: #ffffff;
+  color: var(--primary-background-color);
 }
 @media screen and(min-width: 320px) and (max-width: 767px) {
   .container {
