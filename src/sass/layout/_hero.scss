@@ -1,3 +1,16 @@
+.hero-section {
+  width: 100%;
+  height: 418px;
+
+  @media screen and (min-width: 768px) {
+    height: 334px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 574px;
+  }
+}
+
 .hero {
   position: absolute;
   top: 0;
@@ -51,9 +64,19 @@
 .hero__ice-cream {
   position: absolute;
   bottom: 0;
-  left: 63%;
   z-index: -1;
   transform: translateX(-50%);
+
+  // animation-name: hero-ice-cream;
+  // animation-duration: 1000ms;
+  // animation-timing-function: linear;
+  // animation-delay: 500ms;
+  // animation-iteration-count: 1;
+  // animation-fill-mode: forwards;
+
+  @media screen and (min-width: 320px) {
+    left: 63%;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279.9px) {
     left: 58%;
@@ -98,11 +121,29 @@
   bottom: 0;
   right: 3%;
   z-index: -1;
+
+  animation-name: hero-girl;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-girl {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero__content {
   @media screen and (min-width: 768px) {
-    // margin-bottom: 19px;
     width: 100%;
   }
 }
@@ -119,10 +160,30 @@
 
   color: var(--primary-text-color);
 
+  animation-name: hero-title;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
   @media screen and (min-width: 1280px) {
     width: 277px;
     font-size: 38px;
     line-height: 44px;
+  }
+}
+
+@keyframes hero-title {
+  0% {
+    margin-top: -20px;
+  }
+  50% {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  100% {
+    padding-top: -10px;
   }
 }
 
@@ -234,8 +295,11 @@
 }
 
 .hero__info-block {
-  display: flex;
-  flex-direction: column;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero__info-title {

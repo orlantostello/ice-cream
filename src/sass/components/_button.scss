@@ -52,3 +52,16 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #topcontrol {
+    margin-bottom: 50px;
+    z-index: 9999;
+  }
+}
+
+#topcontrol {
+  margin-bottom: 50px;
+  margin-right: 10px;
+  z-index: 9999;
+}

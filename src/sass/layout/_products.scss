@@ -9,12 +9,14 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .container {
+  .products__container {
     position: relative;
+    width: 320px;
+    margin: 0 auto;
   }
   .products {
     text-align: center;
-    padding-top: 121px;
+    padding-top: 120px;
     padding-bottom: 98px;
     background-color: var(--primary-background-color);
 
@@ -124,7 +126,7 @@
     content: '';
     position: absolute;
     display: block;
-    top: 98px;
+    top: 124px;
     left: 32px;
     width: 249px;
     height: 252px;
@@ -145,7 +147,7 @@
     content: '';
     position: absolute;
     display: block;
-    top: 714px;
+    top: 740px;
     left: 32px;
     width: 249px;
     height: 252px;
@@ -166,7 +168,7 @@
     content: '';
     position: absolute;
     display: block;
-    bottom: 352px;
+    bottom: 362px;
     left: 32px;
     width: 249px;
     height: 252px;
@@ -184,7 +186,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1079px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
     position: relative;
   }
@@ -360,14 +362,14 @@
   // }
 }
 
-@media screen and (min-width: 1080px) {
-  .container {
+@media screen and (min-width: 1280px) {
+  .products__container {
     position: relative;
   }
   .products {
     text-align: center;
     padding-top: 127px;
-    padding-bottom: 119px;
+    padding-bottom: 120px;
     background-color: var(--primary-background-color);
 
     &__label {
