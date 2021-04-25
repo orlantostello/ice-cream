@@ -1,15 +1,17 @@
-section {
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 245, 246, 1) 26%);
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 10%,
-    rgba(255, 245, 246, 1) 26%
+.contacts {
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-background-color) 15.4%,
+    var(--background-color) 15.4%,
+    var(--background-color) 84.6%
   );
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 245, 246, 1) 26%);
+}
+.location-form__btn:hover,
+.location-form__btn:focus {
+  color: var(--primary-background-color);
 }
 @media screen and(min-width: 320px) and (max-width: 767px) {
-  .container {
+  .contacts .container {
     width: 320px;
     margin: 0 auto;
   }
@@ -150,7 +152,7 @@ section {
     fill: var(--accent-color);
   }
 }
-@media screen and(min-width: 768px) and (max-width: 1079px) {
+@media screen and(min-width: 768px) and (max-width: 1279px) {
   .container {
     width: 768px;
     margin: 0 auto;
@@ -285,7 +287,7 @@ section {
     }
   }
 }
-@media screen and(min-width: 1080px) {
+@media screen and(min-width: 1280px) {
   .container {
     width: 1080px;
     margin: 0 auto;
