@@ -38,6 +38,20 @@
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    
+    <!-- Якорные ссылки - плавный переход -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $("#menu").on("click", "a", function (event) {
+              event.preventDefault();
+              var id = $(this).attr('href'),
+                top = $(id).offset().top;
+              $('body,html').animate({ scrollTop: top }, 1500);
+            });
+          });
+        </script>
     <script type="text/javascript" src="//web-ptica.ru/VRV-files/knopkavverh/6.js"></script>
+
   </body>
 </html>
