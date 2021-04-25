@@ -24,7 +24,7 @@
     box-shadow: 0 0 40px 40px var(--primary-background-color) inset,
       0 0 0 0 var(--primary-background-color);
 
-    transition: all 150ms ease-in-out;
+    transition: all 250ms ease-in-out;
 
     &:hover,
     &:focus {
@@ -41,7 +41,7 @@
     background-color: var(--accent-color);
     box-shadow: 0 0 40px 40px #c7133e inset, 0 0 0 0 #c7133e;
 
-    transition: all 150ms ease-in-out;
+    transition: all 250ms ease-in-out;
 
     &:hover,
     &:focus {
