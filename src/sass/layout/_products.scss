@@ -16,7 +16,7 @@
   }
   .products {
     text-align: center;
-    padding-top: 121px;
+    padding-top: 120px;
     padding-bottom: 98px;
     background-color: var(--primary-background-color);
 
@@ -126,7 +126,7 @@
     content: '';
     position: absolute;
     display: block;
-    top: 98px;
+    top: 124px;
     left: 32px;
     width: 249px;
     height: 252px;
@@ -147,7 +147,7 @@
     content: '';
     position: absolute;
     display: block;
-    top: 714px;
+    top: 740px;
     left: 32px;
     width: 249px;
     height: 252px;
@@ -168,7 +168,7 @@
     content: '';
     position: absolute;
     display: block;
-    bottom: 352px;
+    bottom: 362px;
     left: 32px;
     width: 249px;
     height: 252px;
@@ -369,7 +369,7 @@
   .products {
     text-align: center;
     padding-top: 127px;
-    padding-bottom: 119px;
+    padding-bottom: 120px;
     background-color: var(--primary-background-color);
 
     &__label {
