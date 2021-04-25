@@ -1,15 +1,23 @@
-section {
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 245, 246, 1) 26%);
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 10%,
-    rgba(255, 245, 246, 1) 26%
+.contacts {
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-background-color) 15.4%,
+    var(--background-color) 15.4%,
+    var(--background-color) 84.6%
   );
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(255, 245, 246, 1) 26%);
 }
 @media screen and(min-width: 320px) and (max-width: 767px) {
-  .container {
+  .contacts {
+    padding-top: 36px;
+    padding-bottom: 88px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primary-background-color) 10.4%,
+      var(--background-color) 10.4%,
+      var(--background-color) 89.6%
+    );
+  }
+  .contacts_container {
     width: 320px;
     margin: 0 auto;
   }
@@ -17,7 +25,6 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 54px;
     &__item:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -121,10 +128,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 54px;
   }
-  .location-form__btn {
+  .location-form__btn_dark-theme {
     align-items: center;
-    width: 161.45px;
+    width: 162px;
     height: 44px;
     background: var(--burger-icon-color);
     border-radius: 22px;
@@ -135,31 +143,45 @@ section {
     text-align: center;
     color: var(--primary-text-color);
     border-style: none;
-  }
-  .location-form__btn:not(:last-child) {
     margin-bottom: 10px;
   }
-  .light-teme {
+  .location-form__btn_dark-theme:hover,
+  .location-form__btn_dark-theme:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--burger-icon-color);
+  }
+  .location-form__btn_light-theme {
+    align-items: center;
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
+    border-style: none;
     color: var(--accent-color);
     background: var(--primary-background-color);
   }
-  .location-form__icon {
-    fill: var(--primary-background-color);
-  }
-  .franchise-form__icon {
-    fill: var(--accent-color);
+  .location-form__btn_light-theme:hover,
+  .location-form__btn_light-theme:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--primary-text-color);
   }
 }
-@media screen and(min-width: 768px) and (max-width: 1079px) {
-  .container {
-    width: 768px;
+@media screen and(min-width: 768px) and (max-width: 1279px) {
+  .contacts {
+    padding-top: 20px;
+    padding-bottom: 140px;
+  }
+  .contacts_container {
     margin: 0 auto;
   }
   .contacts-list {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 80px;
     &__item:not(:first-child) {
       margin-left: 20px;
     }
@@ -248,9 +270,10 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 81px;
   }
-  .location-form__btn {
-    width: 174.05px;
+  .location-form__btn_dark-theme {
+    width: 174px;
     height: 44px;
     background: var(--burger-icon-color);
     border-radius: 22px;
@@ -260,19 +283,29 @@ section {
     line-height: 1.31;
     color: var(--primary-text-color);
     border-style: none;
-  }
-  .location-form__btn:not(:last-child) {
     margin-right: 15px;
   }
-  .light-teme {
+  .location-form__btn_dark-theme:hover,
+  .location-form__btn_dark-theme:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--burger-icon-color);
+  }
+  .location-form__btn_light-theme {
+    width: 174px;
+    height: 44px;
+    border-radius: 22px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border-style: none;
     color: var(--accent-color);
     background: var(--primary-background-color);
   }
-  .location-form__icon {
-    fill: var(--primary-background-color);
-  }
-  .franchise-form__icon {
-    fill: var(--accent-color);
+  .location-form__btn_light-theme:hover,
+  .location-form__btn_light-theme:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--primary-text-color);
   }
   .contacts-list__wrapper {
     &::after {
@@ -285,17 +318,19 @@ section {
     }
   }
 }
-@media screen and(min-width: 1080px) {
-  .container {
-    width: 1080px;
+
+@media screen and(min-width: 1279px) {
+  .contacts {
+    padding-top: 20px;
+    padding-bottom: 155px;
+  }
+  .contacts_container {
     margin: 0 auto;
   }
   .contacts-list {
-    margin-top: 127px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 86px;
     &__item:not(:first-child) {
       margin-left: 30px;
     }
@@ -383,8 +418,9 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 91px;
   }
-  .location-form__btn {
+  .location-form__btn_dark-theme {
     width: 198px;
     height: 44px;
     background-color: var(--burger-icon-color);
@@ -395,19 +431,29 @@ section {
     color: var(--primary-text-color);
     border-radius: 22px;
     border-style: none;
-  }
-  .location-form__btn:not(:last-child) {
     margin-right: 15px;
   }
-  .light-teme {
+  .location-form__btn_dark-theme:hover,
+  .location-form__btn_dark-theme:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--burger-icon-color);
+  }
+  .location-form__btn_light-theme {
+    width: 198px;
+    height: 44px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+    border-style: none;
     color: var(--accent-color);
     background: var(--primary-background-color);
   }
-  .location-form__icon {
-    fill: var(--primary-background-color);
-  }
-  .franchise-form__icon {
-    fill: var(--accent-color);
+  .location-form__btn_light-theme:hover,
+  .location-form__btn_light-theme:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--primary-text-color);
   }
   .contacts-list__wrapper {
     &::after {
