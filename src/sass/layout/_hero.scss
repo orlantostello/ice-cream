@@ -160,7 +160,7 @@
 
   color: var(--primary-text-color);
 
-  animation-name: hero-title;
+  animation-name: hero-content;
   animation-duration: 1000ms;
   animation-timing-function: linear;
   animation-delay: 500ms;
@@ -174,16 +174,16 @@
   }
 }
 
-@keyframes hero-title {
+@keyframes hero-content {
   0% {
-    margin-top: -20px;
+    margin-top: -40px;
   }
   50% {
-    padding-top: 10px;
+    padding-top: 20px;
     margin-bottom: 10px;
   }
   100% {
-    padding-top: -10px;
+    padding-top: 30px;
   }
 }
 
