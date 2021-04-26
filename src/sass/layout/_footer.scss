@@ -1,9 +1,8 @@
 .page-footer {
   background-color: var(--background-color);
-}
-.footer-container {
   padding-top: 25px;
 }
+
 .footer-content {
   padding-bottom: 43px;
 }
@@ -89,7 +88,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .footer-container {
+  .page-footer {
     padding-top: 18px;
   }
   .footer-content {
@@ -118,7 +117,7 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .footer-container {
+  .page-footer {
     padding-top: 25px;
   }
   .footer-content {
