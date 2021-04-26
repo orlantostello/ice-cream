@@ -209,6 +209,8 @@ a {
   padding: 0;
   border: none;
   background-color: transparent;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -219,6 +221,8 @@ a {
 
 .page-header__menu-button:hover, .page-header__menu-button:focus {
   cursor: pointer;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 @media screen and (min-width: 1280px) {
@@ -254,8 +258,8 @@ a {
 }
 
 .logo:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .logo__icon {
