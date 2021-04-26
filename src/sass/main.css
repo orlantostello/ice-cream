@@ -454,6 +454,58 @@ a {
   color: var(--accent-color);
 }
 
+@-webkit-keyframes hero-content {
+  0% {
+    margin-top: -20px;
+  }
+  50% {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  100% {
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes hero-content {
+  0% {
+    margin-top: -20px;
+  }
+  50% {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  100% {
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@-webkit-keyframes hero-background {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-background {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero-section {
   width: 100%;
   height: 418px;
@@ -597,8 +649,8 @@ a {
   bottom: 0;
   right: 3%;
   z-index: -1;
-  -webkit-animation-name: hero-girl;
-          animation-name: hero-girl;
+  -webkit-animation-name: hero-background;
+          animation-name: hero-background;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-timing-function: linear;
@@ -614,30 +666,6 @@ a {
 @media screen and (max-width: 767.9px) {
   .hero__girl {
     display: none;
-  }
-}
-
-@-webkit-keyframes hero-girl {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes hero-girl {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -676,32 +704,6 @@ a {
     width: 277px;
     font-size: 38px;
     line-height: 44px;
-  }
-}
-
-@-webkit-keyframes hero-content {
-  0% {
-    margin-top: -40px;
-  }
-  50% {
-    padding-top: 20px;
-    margin-bottom: 10px;
-  }
-  100% {
-    padding-top: 30px;
-  }
-}
-
-@keyframes hero-content {
-  0% {
-    margin-top: -40px;
-  }
-  50% {
-    padding-top: 20px;
-    margin-bottom: 10px;
-  }
-  100% {
-    padding-top: 30px;
   }
 }
 
@@ -825,6 +827,21 @@ a {
             align-items: flex-end;
     margin-right: auto;
   }
+}
+
+.hero__milk {
+  -webkit-animation-name: hero-background;
+          animation-name: hero-background;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .hero__info-block {
