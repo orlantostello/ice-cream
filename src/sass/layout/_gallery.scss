@@ -1,21 +1,15 @@
 .gallery {
+  padding: 10px 0;
   background-image: linear-gradient(
     to bottom,
-    var(--background-color) 39.4%,
-    var(--primary-background-color) 39.4%,
-    var(--primary-background-color) 60.6%
+    var(--background-color) 43%,
+    var(--primary-background-color) 43%,
+    var(--primary-background-color) 57%
   );
-
-  // &__container {
-  //   position: relative;
-  //   height: 122px;
-  // }
 
   &-image {
     display: block;
-    // position: absolute;
-    // top: 0px;
-    // margin: 0 auto 0 -23px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -24,20 +18,10 @@
   .gallery {
     background-image: linear-gradient(
       to bottom,
-      var(--background-color) 39.6%,
-      var(--primary-background-color) 39.6%,
-      var(--primary-background-color) 60.4%
+      var(--background-color) 41%,
+      var(--primary-background-color) 41%,
+      var(--primary-background-color) 59%
     );
-
-    // &__container {
-    //   height: 264px;
-    // }
-
-    &-image {
-      // left: -34px;
-      margin-left: -34px;
-      // margin-left: 0;
-    }
   }
 }
 
@@ -45,18 +29,9 @@
   .gallery {
     background-image: linear-gradient(
       to bottom,
-      var(--background-color) 39.6%,
-      var(--primary-background-color) 39.6%,
-      var(--primary-background-color) 60.4%
+      var(--background-color) 40.2%,
+      var(--primary-background-color) 40.2%,
+      var(--primary-background-color) 59.8%
     );
-
-    // &__container {
-    //   height: 430px;
-    // }
-
-    // &-image {
-    //   left: -115px;
-    //   max-width: 1240px;
-    // }
   }
 }
