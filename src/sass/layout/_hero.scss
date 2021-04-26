@@ -1,3 +1,31 @@
+// Animation
+@keyframes hero-content {
+  0% {
+    margin-top: -20px;
+  }
+  50% {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  100% {
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes hero-background {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Hero
 .hero-section {
   width: 100%;
   height: 418px;
@@ -123,18 +151,6 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes hero-background {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .hero__content {
   @media screen and (min-width: 768px) {
     width: 100%;
@@ -164,20 +180,6 @@
     width: 277px;
     font-size: 38px;
     line-height: 44px;
-  }
-}
-
-@keyframes hero-content {
-  0% {
-    margin-top: -20px;
-  }
-  50% {
-    padding-top: 10px;
-    margin-bottom: 10px;
-  }
-  100% {
-    padding-top: 10px;
-    margin-bottom: 20px;
   }
 }
 
