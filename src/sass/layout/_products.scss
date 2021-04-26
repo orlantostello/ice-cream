@@ -45,6 +45,8 @@
 
     &__item {
       margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 40px;
       width: 280px;
       height: 485px;
       border-radius: 24px;
@@ -65,7 +67,7 @@
       color: var(--primary-text-color);
     }
     &__description {
-      margin-bottom: 62px;
+      margin-bottom: 30px;
       font-family: var(--secondary-font);
       font-weight: 700;
       font-size: 14px;
@@ -224,6 +226,8 @@
     &__item {
       margin-top: 20px;
       margin-left: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
       flex-basis: calc(100% / 3 - 20px);
       width: 220px;
       height: 485px;
@@ -302,63 +306,64 @@
     content: '';
     position: absolute;
     display: block;
-    top: 148px;
+    top: 152px;
+    left: 32px;
     width: 220px;
     height: 226px;
     background-image: url('../images/tablet/product-ice-cream_tablet-min.png');
   }
-  // // ЧТО-ТО НЕ ТАК С КАРТИНКАМИ 2X, БОЛЬШЕ ПО РАЗМЕРУ, ЧЕМ ДОЛЖНЫ БЫТЬ
-  // @media (min-device-pixel-ratio: 2),
-  //   (-webkit-min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .products-list__item_ice-cream::before {
-  //     background-image: url('../images/tablet/product-ice-cream_tablet@2x-min.png');
-  //     width: 220px;
-  //     height: 226px;
-  //   }
-  // }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .products-list__item_ice-cream::before {
+      background-image: url('../images/tablet/product-ice-cream_tablet@2x-min.png');
+      background-size: contain;
+    }
+  }
 
   .products-list__item_ice-coffee::before {
     content: '';
     position: absolute;
     display: block;
     top: 148px;
+    left: 274px;
     width: 220px;
     height: 233px;
     background-image: url('../images/tablet/product-icecoffee_tablet-min.png');
   }
 
-  // @media (min-device-pixel-ratio: 2),
-  //   (-webkit-min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .products-list__item_ice-coffee::before {
-  //     background-image: url('../images/tablet/product-icecoffee_tablet@2x-min.png');
-  //     background-size: 220px 233px;
-  //   }
-  // }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .products-list__item_ice-coffee::before {
+      background-image: url('../images/tablet/product-icecoffee_tablet@2x-min.png');
+      background-size: contain;
+    }
+  }
 
   .products-list__item_milkshakes::before {
     content: '';
     position: absolute;
     display: block;
-    top: 148px;
+    top: 156px;
+    right: 32px;
     width: 220px;
     height: 224px;
     background-image: url('../images/tablet/product-milkshakes_tablet-min.png');
   }
 
-  // @media (min-device-pixel-ratio: 2),
-  //   (-webkit-min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .products-list__item_milkshakes::before {
-  //     background-image: url('../images/tablet/product-milkshakes_tablet@2x-min.png');
-  //     width: 220px;
-  //     height: 224px;
-  //   }
-  // }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .products-list__item_milkshakes::before {
+      background-image: url('../images/tablet/product-milkshakes_tablet@2x-min.png');
+      background-size: contain;
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -398,6 +403,8 @@
     &__item {
       margin-top: 24px;
       margin-left: 24px;
+      padding-left: 44px;
+      padding-right: 44px;
       flex-basis: calc(100% / 3 - 24px);
       width: 330px;
       height: 525px;
@@ -477,6 +484,7 @@
     position: absolute;
     display: block;
     top: 166px;
+    left: 14px;
     width: 335px;
     height: 335px;
     background-image: url('../images/desktop/product-ice-cream_desktop-min.png');
@@ -497,6 +505,7 @@
     position: absolute;
     display: block;
     top: 166px;
+    left: 374px;
     width: 335px;
     height: 335px;
     background-image: url('../images/desktop/product-icecoffee_desktop-min.png');
@@ -517,6 +526,7 @@
     position: absolute;
     display: block;
     top: 166px;
+    right: 14px;
     width: 335px;
     height: 335px;
     background-image: url('../images/desktop/product-milkshakes_desktop-min.png');
