@@ -144,12 +144,51 @@
     color: var(--primary-text-color);
     border-style: none;
     margin-bottom: 10px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .location-form__btn_dark-theme:hover,
   .location-form__btn_dark-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--burger-icon-color);
     cursor: pointer;
+  }
+
+  .btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content {
+    width: 162px;
+    display: none;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    min-width: 160px;
+    z-index: 1;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content a {
+    color: var(--mobile-menu-bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content a:hover {
+    background-color: var(--secondary-accent-color);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .btn:hover,
+  .dropdown:hover .btn {
+    background-color: var(--secondary-accent-color);
+
   }
   .location-form__btn_light-theme {
     align-items: center;
@@ -164,12 +203,41 @@
     border-style: none;
     color: var(--accent-color);
     background: var(--primary-background-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .location-form__btn_light-theme:hover,
   .location-form__btn_light-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
     cursor: pointer;
+
+  }
+  .dropdown__light-theme {
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme {
+    width: 162px;
+    display: none;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    min-width: 160px;
+    z-index: 1;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme a {
+    color: var(--mobile-menu-bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme a:hover {
+    background-color: var(--secondary-accent-color);
+  }
+  .dropdown__light-theme:hover .dropdown-content__light-theme {
+    display: block;
+
   }
 }
 @media screen and(min-width: 768px) and (max-width: 1279px) {
@@ -286,12 +354,52 @@
     color: var(--primary-text-color);
     border-style: none;
     margin-right: 15px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .location-form__btn_dark-theme:hover,
   .location-form__btn_dark-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--burger-icon-color);
     cursor: pointer;
+  }
+
+  .btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content {
+    width: 174px;
+    display: none;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    min-width: 160px;
+    z-index: 1;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content a {
+    color: var(--mobile-menu-bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content a:hover {
+    background-color: var(--secondary-accent-color);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .btn:hover,
+  .dropdown:hover .btn {
+    background-color: var(--secondary-accent-color);
+
   }
   .location-form__btn_light-theme {
     width: 174px;
@@ -304,12 +412,51 @@
     border-style: none;
     color: var(--accent-color);
     background: var(--primary-background-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .location-form__btn_light-theme:hover,
   .location-form__btn_light-theme:focus {
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
     cursor: pointer;
+
+  }
+  .dropdown__light-theme {
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme {
+    width: 174px;
+    display: none;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    min-width: 160px;
+    z-index: 1;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme a {
+    color: var(--mobile-menu-bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme a:hover {
+    background-color: var(--secondary-accent-color);
+  }
+  .dropdown__light-theme:hover .dropdown-content__light-theme {
+    display: block;
+  }
+  .btn:hover,
+  .dropdown__light-theme:hover .btn {
+    background-color: var(--secondary-accent-color);
+  }
+  .location-form__btn_light-theme:hover,
+  .location-form__btn_light-theme:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+
   }
   .contacts-list__wrapper {
     &::after {
@@ -323,7 +470,8 @@
   }
 }
 
-@media screen and(min-width: 1279px) {
+@media screen and(min-width: 1280px) {
+
   .contacts {
     padding-top: 20px;
     padding-bottom: 155px;
@@ -437,7 +585,46 @@
     border-style: none;
     margin-right: 15px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   }
+  .btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content {
+    width: 198px;
+    display: none;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    min-width: 160px;
+    z-index: 1;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content a {
+    color: var(--mobile-menu-bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content a:hover {
+    background-color: var(--secondary-accent-color);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .btn:hover,
+  .dropdown:hover .btn {
+    background-color: var(--secondary-accent-color);
+  }
+
   .location-form__btn_dark-theme:hover,
   .location-form__btn_dark-theme:focus {
     background-color: var(--secondary-accent-color);
@@ -457,6 +644,38 @@
     background: var(--primary-background-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .dropdown__light-theme {
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme {
+    width: 198px;
+    display: none;
+    position: absolute;
+    background-color: var(--primary-background-color);
+    min-width: 160px;
+    z-index: 1;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme a {
+    color: var(--mobile-menu-bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropdown-content__light-theme a:hover {
+    background-color: var(--secondary-accent-color);
+  }
+  .dropdown__light-theme:hover .dropdown-content__light-theme {
+    display: block;
+  }
+  .btn:hover,
+  .dropdown__light-theme:hover .btn {
+    background-color: var(--secondary-accent-color);
+  }
+
   .location-form__btn_light-theme:hover,
   .location-form__btn_light-theme:focus {
     background-color: var(--secondary-accent-color);
