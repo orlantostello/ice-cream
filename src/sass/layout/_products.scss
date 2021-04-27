@@ -313,6 +313,7 @@
     background-image: url('../images/tablet/product-ice-cream_tablet-min.png');
   }
 
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -322,6 +323,7 @@
       background-size: contain;
     }
   }
+
 
   .products-list__item_ice-coffee::before {
     content: '';
@@ -334,6 +336,7 @@
     background-image: url('../images/tablet/product-icecoffee_tablet-min.png');
   }
 
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -343,6 +346,7 @@
       background-size: contain;
     }
   }
+
 
   .products-list__item_milkshakes::before {
     content: '';

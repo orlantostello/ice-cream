@@ -7,9 +7,11 @@
     var(--primary-background-color) 57%
   );
 
+
   &-image {
     display: block;
     max-width: 100%;
+
     margin: 0 auto;
   }
 }
@@ -22,6 +24,7 @@
       var(--primary-background-color) 41%,
       var(--primary-background-color) 59%
     );
+
   }
 }
 
@@ -33,5 +36,6 @@
       var(--primary-background-color) 40.2%,
       var(--primary-background-color) 59.8%
     );
+
   }
 }
