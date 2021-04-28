@@ -1,12 +1,25 @@
 .gallery {
   padding: 10px 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(43%, var(--background-color)),
+    color-stop(43%, var(--primary-background-color)),
+    color-stop(57%, var(--primary-background-color))
+  );
+  background-image: -o-linear-gradient(
+    top,
+    var(--background-color) 43%,
+    var(--primary-background-color) 43%,
+    var(--primary-background-color) 57%
+  );
   background-image: linear-gradient(
     to bottom,
     var(--background-color) 43%,
     var(--primary-background-color) 43%,
     var(--primary-background-color) 57%
   );
-
 
   &-image {
     display: block;
@@ -18,24 +31,50 @@
 
 @media screen and(min-width: 768px) {
   .gallery {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(41%, var(--background-color)),
+      color-stop(41%, var(--primary-background-color)),
+      color-stop(59%, var(--primary-background-color))
+    );
+    background-image: -o-linear-gradient(
+      top,
+      var(--background-color) 41%,
+      var(--primary-background-color) 41%,
+      var(--primary-background-color) 59%
+    );
     background-image: linear-gradient(
       to bottom,
       var(--background-color) 41%,
       var(--primary-background-color) 41%,
       var(--primary-background-color) 59%
     );
-
   }
 }
 
 @media screen and(min-width: 1280px) {
   .gallery {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(40.2%, var(--background-color)),
+      color-stop(40.2%, var(--primary-background-color)),
+      color-stop(59.8%, var(--primary-background-color))
+    );
+    background-image: -o-linear-gradient(
+      top,
+      var(--background-color) 40.2%,
+      var(--primary-background-color) 40.2%,
+      var(--primary-background-color) 59.8%
+    );
     background-image: linear-gradient(
       to bottom,
       var(--background-color) 40.2%,
       var(--primary-background-color) 40.2%,
       var(--primary-background-color) 59.8%
     );
-
   }
 }
